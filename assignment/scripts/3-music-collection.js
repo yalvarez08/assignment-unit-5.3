@@ -32,12 +32,29 @@ console.log('my music collection:', myCollection);
 //create function showCollection
 function showCollection (collection) {
   for (let variable of collection) {
-    console.log(variable.title, 'by', variable.artist, 'published in', variable.yearPublished);
+    console.log(`${variable.title} by ${variable.artist} published in ${variable.yearPublished}`);
   }
 } //end function
   
 //test showCollection function
 showCollection(myCollection);
+
+//created findByArtist function
+function findByArtist (collection, artist) {
+let resultMatch = [];
+for (let i of collection) {
+  let albumYear = collection.yearPublished;
+  if (artist===myCollection.artist && albumYear===myCollection.yearPublished) {
+    resultMatch.push(albumYear, artist);
+    return resultMatch;
+  } else {
+    return ('empty array-no match');
+    }
+  }
+}
+
+findByArtist(myCollection, 'Queen');
+
 
 
 
