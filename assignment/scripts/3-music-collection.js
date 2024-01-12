@@ -11,25 +11,46 @@ function addToCollection (collection, title, artist, yearPublished) {
   return album; 
 } //end function
 
+//add six new albums to collection
+let album0 = addToCollection(myCollection, 'Hot Space', 'Queen', 1982);
+console.log('first album:', album0);
+let album1 = addToCollection(myCollection, 'Back to Black', 'Amy Winehouse', 2006);
+console.log('second album:', album1);
+let album2 = addToCollection(myCollection, 'Relayer ', 'Yes', 1974);
+console.log('third album:', album2);
+let album3 = addToCollection(myCollection, 'Tragic Kingdom', 'No Doubt', 1995);
+console.log('fourth album:', album3);
+let album4 = addToCollection(myCollection, 'Cat in the Hat', 'Bobby Caldwell', 1991);
+console.log('fifth album:', album4);
+let album5 = addToCollection(myCollection, 'The King of Limbs', 'Radiohead', 2011);
+console.log('sixth album:', album5);
 
-//test addToCollection function
-addToCollection(myCollection, 'Hot Space', 'Queen', 1982);
-addToCollection(myCollection, 'Relayer ', 'Yes', 1974);
-addToCollection(myCollection, 'Back to Black', 'Amy Winehouse', 2006);
-addToCollection(myCollection, 'Mamas Gun', 'Erykah Badu', 2000);
-addToCollection(myCollection, 'Cat in the Hat', 'Bobby Caldwell', 1991);
-addToCollection(myCollection, 'The King of Limbs', 'Radiohead', 2011);
-
-
+//console log myCollection array
 console.log('my music collection:', myCollection);
-console.log(myCollection);
+
 
 //create function showCollection
 //function showCollection (collection) {
-  for (variable of collection) {
+  //for (let variable of collection) { }
+  
     
-  }
-  console.log()
+  
+  //console.log()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
