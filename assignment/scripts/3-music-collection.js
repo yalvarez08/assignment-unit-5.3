@@ -4,7 +4,13 @@ let myCollection = [];
 
 //add function addToCollection
 function addToCollection (collection, title, artist, yearPublished) {
-  
+
+
+  const album = {
+    title: '',
+    artist: '',
+    yearPublished: '',
+  }
 }
 
 
