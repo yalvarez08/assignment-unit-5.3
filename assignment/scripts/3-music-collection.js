@@ -43,18 +43,18 @@ showCollection(myCollection);
 function findByArtist (collection, artist) {
 let resultMatch = [];
 for (let i of collection) {
-  let albumYear = collection.yearPublished;
-  if (artist===myCollection.artist && albumYear===myCollection.yearPublished) {
-    resultMatch.push(albumYear, artist);
+  let category = myCollection[i];
+  if (artist===category.artist) {
+    resultMatch.push(category);
     return resultMatch;
   } else {
-    return ('empty array-no match');
+    console.log('sorry, no match');
+    return resultMatch;
     }
   }
 }
 
-findByArtist(myCollection, 'Queen');
-
+console.log(findByArtist(myCollection, 'Queen'));
 
 
 
