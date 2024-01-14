@@ -43,18 +43,19 @@ showCollection(myCollection);
 function findByArtist (collection, artist) {
 let resultMatch = [];
 for (let i of collection) {
-  let category = myCollection[i];
-  if (artist===category.artist) {
-    resultMatch.push(category);
-    return resultMatch;
+  
+  if (artist===i.artist) {
+    resultMatch.push(i.title, i.yearPublished);
+    return ('album match found in collection:', resultMatch);
   } else {
-    console.log('sorry, no match');
-    return resultMatch;
+    return ('sorry, no match');
     }
   }
 }
 
-console.log(findByArtist(myCollection, 'Queen'));
+console.log('find album by artist, QUEEN:', findByArtist(myCollection, 'Queen'));
+console.log('find album by artist, NO DOUBT:', findByArtist(myCollection, 'No Doubt'));
+console.log('find album by artist, FLEETWOOD MAC:', findByArtist(myCollection, 'Fleetwood Mac'));
 
 
 
